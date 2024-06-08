@@ -1,11 +1,15 @@
-export class DataNode {
+import { Sorter } from "./sorter";
+export class DataNode  {
   public next: null | DataNode = null;
-  constructor(public NodeData: number) {}
+  constructor(public NodeData: number) {
+  }
 }
 
-export class LinkedList {
+export class LinkedList extends Sorter {
   public head: DataNode | null = null;
-  constructor() {}
+  constructor() {
+    super()
+  }
 
   get length(): number {
     let counter: number = 0;

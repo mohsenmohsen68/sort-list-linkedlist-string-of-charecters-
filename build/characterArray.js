@@ -1,8 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CharacterArray = void 0;
-class CharacterArray {
+const sorter_1 = require("./sorter");
+class CharacterArray extends sorter_1.Sorter {
     constructor(data) {
+        super();
         this.data = data;
     }
     get length() {

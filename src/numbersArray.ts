@@ -1,6 +1,8 @@
-export class NumbersArray {
+import { Sorter } from "./sorter";
+export class NumbersArray extends Sorter {
     public Numbers:number[];
     constructor(Numbers:number[]){
+        super()
         this.Numbers = Numbers;
     }
 
